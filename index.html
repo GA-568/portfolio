@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gagana C L Naik — Portfolio</title>
+  <meta name="description" content="Portfolio of Gagana C L Naik — Aspiring Software Developer (Java, Spring Boot, SQL, Frontend)">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --muted: #94a3b8;
+      --accent: #f1f5f9;
+      --primary: #6366f1;
+      --primary-light: #818cf8;
+      --gradient: linear-gradient(135deg, #6366f1, #3b82f6);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg);
+      color: var(--accent);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: white;
+      font-size: 22px;
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    nav a:hover { color: var(--primary-light); }
+
+    /* Card */
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-3px); }
+
+    .hero {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    h1 { font-size: 32px; font-weight: 700; }
+    h3 { margin-bottom: 8px; font-weight: 600; }
+    .muted { color: var(--muted); }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: .3s;
+    }
+
+    .btn-primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: 0 4px 12px rgba(99,102,241,0.4);
+    }
+    .btn-primary:hover { opacity: .9; }
+
+    .btn-outline {
+      border: 1px solid var(--primary-light);
+      color: var(--primary-light);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: rgba(99,102,241,0.15);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid rgba(99,102,241,0.3);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 14px;
+    }
+
+    .project {
+      background: linear-gradient(135deg, rgba(99,102,241,0.18), rgba(15,23,42,1));
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid rgba(99,102,241,0.2);
+      transition: .3s;
+    }
+    .project:hover { transform: scale(1.02); border-color: var(--primary-light); }
+
+    @media (max-width:900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="avatar">GC</div>
+      <div>
+        <div style="font-weight:800">Gagana C L Naik</div>
+        <div style="color:var(--muted);font-size:13px">
+          Aspiring Software Developer • Java • Spring Boot • SQL
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="card intro">
+      <h1>Hi — I'm Gagana</h1>
+      <p class="muted">
+        A motivated and enthusiastic developer passionate about learning,
+        building, and growing in the field of software development.
+      </p>
+
+      <div class="buttons" style="margin-top:14px; display:flex; gap:12px;">
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1bvI6v8A9ilX_9fQXUaYyjXvt_eDDMp2Q/view?usp=drive_link">
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <div class="card right-card">
+      <h3>Profile</h3>
+      <p class="muted">
+        Email: gaganacl568@gmail.com<br>
+        Phone: 7892114757<br>
+        Harohalli, Karnataka
+      </p>
+
+      <h3>Languages</h3>
+      <p class="muted">English • Kannada • Hindi</p>
+
+      <h3>Strengths</h3>
+      <p class="muted">Team coordination • Multitasking • Communication</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="card" style="margin-top:30px;">
+    <h3>Technical Skills</h3>
+    <div class="skills" style="margin-top:12px;">
+      <div class="skill">Java</div>
+      <div class="skill">Spring Boot</div>
+      <div class="skill">Hibernate</div>
+      <div class="skill">JDBC</div>
+      <div class="skill">SQL</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Linux</div>
+      <div class="skill">DSA</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="card" style="margin-top:30px;">
+    <h3>Projects</h3>
+
+    <div class="grid-2">
+      <div class="project">
+        <h4>Blood Bank Management System</h4>
+        <p class="muted">
+          A DBMS-based system for managing blood donors, inventory,
+          recipients using Java, SQL, HTML/CSS, JS.
+        </p>
+      </div>
+
+      <div class="project">
+        <h4>Air Quality Prediction Dashboard</h4>
+        <p class="muted">
+          Machine learning–based air quality analysis with Power BI dashboards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!---Achimevements and strength -->
+  <section class="card" style="margin-top:30px;">
+    <h3>Achievements & Certifications</h3>
+  
+    <div style="margin-top:12px;">
+      <h4 style="margin:0 0 6px; color:var(--accent);">
+        Java Full Stack Certification — Tap Academy
+      </h4>
+      <p class="muted" style="margin:0;">
+        Successfully completed Full Stack Java Development program covering Java, SQL, HTML/CSS, JavaScript & backend development.
+      </p>
+    </div>
+  </section>
+
+  <!--contact-->
+
+  <section id="contact" class="card" style="margin-top:30px;">
+    <h3>Contact Me</h3>
+    <p class="muted">Feel free to reach out for opportunities, discussions, or collaborations.</p>
+  
+    <div style="margin-top:10px;">
+      <p class="muted"><strong>Email:</strong> gaganacl568@gmail.com</p>
+      <p class="muted"><strong>Phone:</strong> 7892114757</p>
+      <p class="muted"><strong>Location:</strong> Harohalli, Karnataka</p>
+    </div>
+  
+    <div style="margin-top:15px; display:flex; gap:12px;">
+      <a class="btn btn-primary" href="mailto:gaganacl568@gmail.com">Email Me</a>
+      <a class="btn btn-outline" href="tel:+917892114757">Call Now</a>
+    </div>
+  </section>
+
+  <!--Eduction-->-->
+
+  <section class="card" style="margin-top:30px;">
+    <h3>Education</h3>
+  
+    <div style="margin-top:12px;">
+      <h4 style="margin:0 0 4px;">Bachelor of Engineering — Computer Science</h4>
+      <p class="muted" style="margin:0;">
+        K.S Institute of Technology (VTU) — CGPA: 7.5  
+        <br>2020 – 2024
+      </p>
+    </div>
+  </section>
+  
+  <!--hobbies and strenth-->
+  <section class="card" style="margin-top:30px;">
+    <h3>Hobbies & Strengths</h3>
+  
+    <div style="margin-top:12px;">
+      <h4 style="margin:0 0 4px;">Hobbies</h4>
+      <p class="muted" style="margin:0;">
+        Drawing • Cycling
+      </p>
+    </div>
+  
+    <div style="margin-top:14px;">
+      <h4 style="margin:0 0 4px;">Strengths</h4>
+      <p class="muted" style="margin:0;">
+        Team Coordination • Multitasking • Good Communication • Quick Learner
+      </p>
+    </div>
+  </section>
+  
+  
+  
+
+  <!-- Footer -->
+  <section class="card" style="margin-top:40px; text-align:center; padding:20px;">
+    <p class="muted" style="margin:0; font-size:14px;">
+      © 2025 Gagana C L Naik — Built with care.
+    </p>
+  </section>
+
+</div> <!-- end container -->
+
+<script>
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(a =>
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href'))
+        .scrollIntoView({ behavior: 'smooth' });
+    })
+  );
+</script>
+
+</body>
+</html>
